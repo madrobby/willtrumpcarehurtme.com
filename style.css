@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'sharp-sans';
-  src: url('SharpSans-ExtraBold.eot');
-  src: url('SharpSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
-       url('SharpSans-ExtraBold.woff2') format('woff2'),
-       url('SharpSans-ExtraBold.woff') format('woff');
+  src: url('SharpSans-Extrabold.eot');
+  src: url('SharpSans-Extrabold.eot?#iefix') format('embedded-opentype'),
+       url('SharpSans-Extrabold.woff2') format('woff2'),
+       url('SharpSans-Extrabold.woff') format('woff');
   font-weight: bold;
 }
 @font-face {
   font-family: 'sharp-sans';
-  src: url('SharpSans-ExtraBoldItalic.eot');
-  src: url('SharpSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-       url('SharpSans-ExtraBoldItalic.woff2') format('woff2'),
-       url('SharpSans-ExtraBoldItalic.woff') format('woff');
+  src: url('SharpSans-ExtraboldItalic.eot');
+  src: url('SharpSans-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+       url('SharpSans-ExtraboldItalic.woff2') format('woff2'),
+       url('SharpSans-ExtraboldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 }
