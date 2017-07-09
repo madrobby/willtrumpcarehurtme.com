@@ -1,13 +1,129 @@
+@font-face {
+  font-family: 'sharp-sans';
+  src: url('SharpSans-ExtraBold.eot');
+  src: url('SharpSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('SharpSans-ExtraBold.woff2') format('woff2'),
+       url('SharpSans-ExtraBold.woff') format('woff');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'sharp-sans';
+  src: url('SharpSans-ExtraBoldItalic.eot');
+  src: url('SharpSans-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('SharpSans-ExtraBoldItalic.woff2') format('woff2'),
+       url('SharpSans-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
 body {
   background: #fff;
+  color: #262626;
   margin: 0;
   padding: 0;
   font-family: lato, Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
+h1:before {
+  display: block;
+  content: ' ';
+  position: absolute;
+  right: 50%;
+  top: 65%;
+  height: 12px;
+  width: 100%;
+  background-image: url(slashes.png);
+  background-size: auto 12px;
+  z-index: 0;
+}
+h1:after {
+  display: block;
+  content: ' ';
+  position: absolute;
+  left: 50%;
+  top: 17%;
+  height: 12px;
+  width: 100%;
+  background-image: url(slashes.png);
+  background-size: auto 12px;
+  z-index: 0;
+}
 h1 {
-  margin: 20% 0 0 0;
-  font-size: 200px;
+  position: relative;
+  margin: 0.9em 0 0.2em;
+  font-size: 5em;
+  line-height: 1.1;
   text-align: center;
+  font-weight: bold;
+  font-family: 'sharp-sans', lato, helvetica, arial, sans-serif;
+}
+
+h1 .first-line {
+  position: relative;
+  font-size: 0.8em;
+  display: inline-block;
+  background: #fff;
+  z-index: 1;
+  padding: 0 0.2em;
+}
+
+h1 .second-line {
+  position: relative;
+  font-size: 1.6em;
+  display: inline-block;
+  background: #fff;
+  z-index: 1;
+  padding: 0 0.2em;
+}
+
+h1 em {
+  color: #dd3058;
+}
+
+h2 {
+  margin: 0em 1em 2em;
+  font-weight: normal;
+  text-align: center;
+  color: #606060;
+}
+
+.main {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #dd3058;
+  color: #fff;
+  height: 60px;
+  text-align: center;
+  padding: 30px 20px 10px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+.statements {
+  margin: 1em 0;
+}
+
+.statements h3 {
+  background: #edf1f4;
+  color: #dd3058;
+  border-radius: 0.3em;
+  font-size: 3em;
+  font-family: 'sharp-sans', lato, helvetica, arial, sans-serif;
+  padding: 0.5em 1em;
+  margin: 0 0 0.3em 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.statements h3:hover {
+  background: #d1dae1;
+  padding: 0.6em 1em;
 }
