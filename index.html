@@ -35,16 +35,61 @@
         </h2>
 
         <div class="statements">
-          <h3>I have kids in school.</h3>
+          <div class="statement">
+            <h3>I have kids in school.</h3>
+            <div class="contents">
+              <div class="video" data-youtube="fm-ogFGf8h4"></div>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
+              <p>
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <h4>Will you call your Senator today?</h4>
+              <a href="tel:1234567890" class="act-now">Yes, show me how!</a>
+            </div>
+          </div>
+
+          <div class="statement">
           <h3>I have employer health.</h3>
+          </div>
+
+          <div class="statement">
           <h3>I have been ill or injured.</h3>
+          </div>
+
+          <div class="statement">
           <h3>I am self-employed.</h3>
+          </div>
+
+          <div class="statement">
           <h3>I have elderly family.</h3>
+          </div>
         </div>
       </div>
 
       <div class="footer">
       </div>
     </div>
+
+    <script>
+      ;(function(){
+        [].slice.call(document.getElementsByClassName('statement')).forEach(function(statement){
+          statement.addEventListener('click', function(){
+            console.log(statement)
+            var video = statement.querySelector('.video');
+            video.innerHTML =
+              '<iframe src="https://www.youtube-nocookie.com/embed/'+
+              video.getAttribute('data-youtube')+
+              '?autoplay=1&modestbranding=1&rel=0&cc_load_policy=1&showinfo=0" allowfullscreen></iframe>';
+            statement.className = 'statement open';
+          });
+        });
+      })();
+    </script>
   </body>
 </html>
