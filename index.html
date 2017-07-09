@@ -80,12 +80,13 @@
       ;(function(){
         [].slice.call(document.getElementsByClassName('statement')).forEach(function(statement){
           statement.addEventListener('click', function(){
-            console.log(statement)
             var video = statement.querySelector('.video');
+            if (video._loaded) return;
             video.innerHTML =
               '<iframe src="https://www.youtube-nocookie.com/embed/'+
               video.getAttribute('data-youtube')+
               '?autoplay=1&modestbranding=1&rel=0&cc_load_policy=1&showinfo=0" allowfullscreen></iframe>';
+            video._loaded = true;
             statement.className = 'statement open';
           });
         });
