@@ -195,3 +195,60 @@ h2 {
   cursor: pointer;
   box-shadow: none;
 }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7) 84%,rgba(255,255,255,0.9) 92%,rgba(255,255,255,0.9));
+  color: #1c537d;
+  z-index: 10;
+  text-align: center;
+  -webkit-backdrop-filter: blur(20px);
+  padding-padding-top: 30vh;
+}
+
+.overlay.open {
+  display: block;
+}
+
+.overlay h4 {
+  margin: 0;
+  font-family: 'sharp-sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.4;
+}
+
+.overlay .call-now {
+  text-decoration: none;
+  font-family: 'sharp-sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.4;
+  border-radius: 0.3em;
+  border: none;
+  text-align: left;
+  margin: 0 5em 2em;
+  padding: 0.5em 1.5em;
+  height: auto;
+  outline: 0;
+  box-sizing: border-box;
+  display: block;
+  width: auto;
+  position: relative;
+  background: #00d8ff;
+  background: linear-gradient(#00d8ff,#00d8ff 84%,#00cef3 92%,#00cef3);
+  color: #1c537d;
+  text-shadow: 0.1em 0.1em rgba(28, 83, 125, 0.2);
+  text-align: center;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.overlay .close {
+  color: #888;
+}
