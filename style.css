@@ -187,10 +187,8 @@ h2 {
   display: block;
   width: auto;
   position: relative;
-  background: #00d8ff;
-  background: linear-gradient(#00d8ff,#00d8ff 84%,#00cef3 92%,#00cef3);
-  color: #1c537d;
-  text-shadow: 0.1em 0.1em rgba(28, 83, 125, 0.2);
+  background: linear-gradient(#30dd5d,#30dd5d 84%,#41e26a 92%,#41e26a);
+  color: #35513c;
   text-align: center;
   cursor: pointer;
   box-shadow: none;
@@ -204,15 +202,18 @@ h2 {
   bottom: 0;
   right: 0;
   background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7) 84%,rgba(255,255,255,0.9) 92%,rgba(255,255,255,0.9));
-  color: #1c537d;
+  color: #262626;
   z-index: 10;
   text-align: center;
   -webkit-backdrop-filter: blur(20px);
-  padding-padding-top: 30vh;
+  padding-top: 30vh;
 }
-
 .overlay.open {
   display: block;
+}
+
+.overlay p {
+  line-height: 1.5;
 }
 
 .overlay h4 {
@@ -221,6 +222,7 @@ h2 {
   font-weight: bold;
   font-size: 1.3em;
   line-height: 1.4;
+  color: #dd3058;
 }
 
 .overlay .call-now {
@@ -232,18 +234,17 @@ h2 {
   border-radius: 0.3em;
   border: none;
   text-align: left;
-  margin: 0 5em 2em;
+  margin: 2em auto;
   padding: 0.5em 1.5em;
   height: auto;
   outline: 0;
   box-sizing: border-box;
   display: block;
   width: auto;
+  max-width: 50%;
   position: relative;
-  background: #00d8ff;
-  background: linear-gradient(#00d8ff,#00d8ff 84%,#00cef3 92%,#00cef3);
-  color: #1c537d;
-  text-shadow: 0.1em 0.1em rgba(28, 83, 125, 0.2);
+  background: linear-gradient(#30dd5d,#30dd5d 84%,#41e26a 92%,#41e26a);
+  color: #35513c;
   text-align: center;
   cursor: pointer;
   box-shadow: none;
