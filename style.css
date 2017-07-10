@@ -253,3 +253,16 @@ h2 {
 .overlay .close {
   color: #888;
 }
+
+@media (max-width: 480px) {
+  * {
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+  }
+  body {
+    font-size: 12px;
+  }
+  h1 { font-size: 3em }
+  h1:before { display: none; }
+  h1:after { display: none; }
+}
