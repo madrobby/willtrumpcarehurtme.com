@@ -28,7 +28,7 @@
         <h1>
           <span class="first-line">Will Trumpcare</span>
           <span class="second-line">Hurt <em>Me</em>?</span>
-</h1>
+        </h1>
 
         <h2>
         <p>
@@ -38,21 +38,21 @@
         </h2>
         <div class="statements">
           <div class="statement">
-            <h3>I have kids in school. </h3>
+            <h3>I have kids in school.</h3>
             <div class="contents">
               <div class="video" data-youtube="i7KSxuUVBn0"></div>
               <p>
               "Cuts to Medicaid will have a negative impact on your child's future..." Courtney - special education teacher.
               </p>
               <p>
-              Cuts to Medicaid will strain special education budgets and school districts will be forced to backfill and cut elsewhere. That means older textbooks, older technology, and cuts to sports programs. 
+              Cuts to Medicaid will strain special education budgets and school districts will be forced to backfill and cut elsewhere. That means older textbooks, older technology, and cuts to sports programs.
               </p>
               <h4>Will you call your Senator today?</h4>
               <a class="act-now">Yes, show me how!</a>
             </div>
           </div>
           <div class="statement">
-            <h3>I have an older parent</h3>
+            <h3>I have an older parent.</h3>
             <div class="contents">
               <div class="video" data-youtube="mOS9nnW6EbI"></div>
               <p>
@@ -66,20 +66,20 @@
             </div>
           </div>
           <div class="statement">
-            <h3>I own or work for a small business </h3>
+            <h3>I own or work for a small business.</h3>
             <div class="contents">
               <div class="video" data-youtube="fm-ogFGf8h4"></div>
               <p>
-              Being able to buy high quality health coverage without annual and lifetime caps and without exclusions for pre-existing conditions gives people the freedom to be entrepreneurs, to start small businesses, or to work for a smaller employer.  
+              Being able to buy high quality health coverage without annual and lifetime caps and without exclusions for pre-existing conditions gives people the freedom to be entrepreneurs, to start small businesses, or to work for a smaller employer.
               </p>
               <p>
               </p>
               <h4>Will you call your Senator today?</h4>
               <a class="act-now">Yes, show me how!</a>
             </div>
-          </div>    
+          </div>
           <div class="statement">
-            <h3>I am a patient or caregiver. </h3>
+            <h3>I am a patient or caregiver.</h3>
             <div class="contents">
               <div class="video" data-youtube="r7gTYMkTVDE"></div>
               <p>
@@ -143,7 +143,7 @@ Tweet</a>
           statement.addEventListener('click', function(){
             var video = statement.querySelector('.video');
             if (video._loaded) return;
-            players.forEach(function(player){ player.pauseVideo() });
+            players.forEach(function(player){ player&&('pauseVideo' in player)&&player.pauseVideo() });
             video.innerHTML =
               '<iframe src="https://www.youtube-nocookie.com/embed/'+
               video.getAttribute('data-youtube')+
@@ -160,7 +160,7 @@ Tweet</a>
         [].slice.call(document.getElementsByClassName('act-now')).forEach(function(act){
           act.addEventListener('click', function(){
             document.querySelector('.overlay').className = 'overlay open';
-            players.forEach(function(player){ player.pauseVideo() });
+            players.forEach(function(player){ player&&('pauseVideo' in player)&&player.pauseVideo() });
           });
         });
 
