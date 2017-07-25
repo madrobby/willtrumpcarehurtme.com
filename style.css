@@ -201,7 +201,7 @@ h2 {
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7) 84%,rgba(255,255,255,0.9) 92%,rgba(255,255,255,0.9));
+  background: linear-gradient(rgba(255,255,255,0.92),rgba(255,255,255,0.92) 84%,rgba(255,255,255,0.97) 92%,rgba(255,255,255,0.97));
   color: #262626;
   z-index: 10;
   text-align: center;
